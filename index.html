@@ -11,11 +11,12 @@
 </head>
 <body>
 
-    <div>
-        <input type="password" id="senha" inputmode="numeric" pattern="[0-9]*">
-        <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
-    </div>
-   <span id="erro-senha" style="color: red; font-size: 12px;" aria-live="polite"></span>
+    <div class="campo">
+    <input type="password" id="senha">
+    <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+</div>
+
+<span id="erro-senha" class="erro" aria-live="polite"></span>
 
     <script src="script.js"></script>
 </body>
