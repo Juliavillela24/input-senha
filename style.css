@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial';
 }
 
 body {
@@ -12,38 +13,48 @@ body {
     justify-content: center;
 }
 
-.campo {
+.container {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.input-container {
+.input-box {
     position: relative;
 }
 
 input {
     width: 250px;
     height: 40px;
+    border: none;
+    outline: none;
     padding: 0 40px 0 10px;
     border-radius: 10px;
-    border: none;
+    font-size: 16px;
 }
 
 #btn-senha {
     position: absolute;
     right: 10px;
-    top: 8px;
-    background: none;
-    border: none;
+    top: 10px;
+    font-size: 20px;
     cursor: pointer;
+    color: #777;
 }
 
 .erro {
     font-size: 13px;
-    color: #ff4d4d;
+    color: #d93025;
+    background-color: #fdecea;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border-left: 4px solid #d93025;
 }
 
 .erro:empty {
     display: none;
+}
+
+.input-erro {
+    border: 2px solid #d93025;
 }
